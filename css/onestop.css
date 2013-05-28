@@ -1,0 +1,70 @@
+.fullscreen {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+html,
+.appView {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+.appView .fadeout {
+  z-index: 99;
+  position: fixed;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background: -moz-linear-gradient(center top, #ffffff, rgba(255, 255, 255, 0)) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
+}
+.appView .topPanel {
+  position: fixed;
+  z-index: 100;
+  margin-top: 8px;
+  width: 100%;
+  height: 70px;
+}
+.appView .topPanel .navbar {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.appView .body {
+  padding-top: 70px;
+}
+.appView .body .stopView {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.appView .body .stopView .namePlaceholder {
+  display: inline-block;
+}
+.appView .body .stopView .stopNextTimePlaceholder {
+  display: block;
+  float: right;
+}
+.appView .body .stopView .stopNextTimePlaceholder .stopNextTime {
+  font-size: 21px;
+  line-height: 1em;
+}
+.appView .body .stopView .stopNextTimePlaceholder .stopNextTime .nextTime,
+.appView .body .stopView .stopNextTimePlaceholder .stopNextTime .nextNextTime {
+  display: inline-block;
+  font-weight: 400;
+}
+.appView .body .stopView .stopNextTimePlaceholder .stopNextTime .nextTime {
+  font-size: 42px;
+  line-height: 1em;
+  color: #468847;
+}

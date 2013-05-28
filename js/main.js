@@ -3,12 +3,14 @@ require.config({
     jquery: 'libs/jquery/jquery-1.10.0.min',
     underscore: 'libs/underscore/underscore-min',
     backbone: 'libs/backbone/backbone-min',
-    text: 'text'
+    text: 'text',
+
+    templates: '../templates'
   }
 });
 
 require([
   'app'
-], function(App){
+], function(App) {
   App.initialize();
 });
